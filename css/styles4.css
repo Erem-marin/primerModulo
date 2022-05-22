@@ -15,6 +15,7 @@ body{
     background: #fafafa;
 }
 
+/* Barra de navegación del perfil */
 nav{
     position: fixed;
     top: 0;
@@ -76,13 +77,15 @@ nav{
 
 header{
     width: 60%;
-    margin: auto;
+    margin: 2em auto 1em auto;
+    /* margin: auto; */
     transform: translateY(50px);
     padding: 20px 0;
 }
 
 .profile-container{
     display: flex;
+    transform: translateX(10px);
 }
 
 .profile-container img{
@@ -128,7 +131,26 @@ header{
     display: flex;
     justify-content: space-between;
     font-size: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.h2-posts{
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.h2-followers{
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.h2-following{
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
 }
 
 .header3 h2, .header3 .p-description{
@@ -251,7 +273,7 @@ main{
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 700px) {
     header {
         display: none;
     }
@@ -259,7 +281,8 @@ main{
 
 @media (max-width: 550px) {
     .main {
-        align-items: center;
+        width: 100%;
+        padding: 1px;
     }
 }
 
