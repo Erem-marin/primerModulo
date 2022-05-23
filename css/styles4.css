@@ -243,6 +243,38 @@ main{
     max-width: 100%;
 }
 
+.f-links{
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+}
+
+.f-links p{
+    flex: auto;
+    width: auto;
+    align-items: center;
+}
+
+.f-links a{
+    text-decoration: none;
+    color: rgba(var(--f52,142,142,142),1);
+    font-size: 12px;
+}
+
+.f-rights{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+}
+
+.f-rights p{
+    flex: auto;
+    width: 100%;
+    text-align: center;
+    color: rgba(var(--f52,142,142,142),1);
+    font-size: 12px;
+}
+
 @media only screen and (max-width: 320px){
     .main-grid{
         column-count: 1;
@@ -288,6 +320,12 @@ main{
 
 @media (max-width: 900px) {
     .nav-text-title{
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+    .f-links{
         display: none;
     }
 }
